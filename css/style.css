@@ -110,7 +110,9 @@ strong { font-weight: 600; }
 
 /* ── Buttons ──────────────────────────────────────────────────── */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-family: var(--font-body);
   font-size: 14px;
   font-weight: 600;
@@ -209,7 +211,7 @@ strong { font-weight: 600; }
 .hero:has(.hero-art img) { grid-template-columns: 1.4fr 1fr; align-items: center; }
 .hero-art img { width: 100%; display: block; border-radius: 8px; }
 
-.btn svg { vertical-align: -2.5px; margin-right: 7px; }
+.btn svg { flex-shrink: 0; }
 
 .hero-photo { display: none; }
 body.has-photo .hero { grid-template-columns: 1.4fr 1fr; align-items: center; }
